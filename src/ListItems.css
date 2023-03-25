@@ -1,0 +1,39 @@
+.list{
+    color: rgb(0, 0, 0);
+    width: 90%;
+    background: rgba( 0, 0, 0, 0.45 );
+    box-shadow: 0 8px 32px 0 rgba(0, 66, 8, 0.639);
+    backdrop-filter: blur( 4.5px );
+    -webkit-backdrop-filter: blur( 4.5px );
+    border-radius: 5px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    height: 50px;
+    margin: 5px auto ;
+}
+.list p{
+    padding: 10px;
+    margin: auto;
+    position: relative;
+}
+.list p span{
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+}
+.faicons{
+    margin: 5px;
+    font-size: 20px;
+    color: #c8e690;
+}
+.list p input{
+    background-color: transparent;
+    border: 0;
+    color: #c8e690;
+    font-weight: bolder;
+    font-size: 18px;
+    margin: 5px;
+}
+
+.list p input:focus{
+    outline: none;
+}

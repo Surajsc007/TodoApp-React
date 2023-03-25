@@ -1,0 +1,92 @@
+body {
+  background-image: url(/green.jpg);
+  background-size: cover;
+}
+
+.App{
+  /* background-color: #2D033B; */
+  min-height: 500px;
+  width: 400px;
+  margin: 40px auto;
+  border-radius: 8px;
+  background: rgba(5, 44, 47, 0.494);
+  box-shadow: 0 8px 32px 0 rgba(31, 135, 71, 0.609);
+  backdrop-filter: blur( 5px );
+  -webkit-backdrop-filter: blur( 5px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+#to-do-form input{
+  /* background-color:#000000; */
+  border: 0;
+  width: 230px;
+  height: 50px;
+  padding: 0 20px;
+  margin: 20px;
+  font-size: 18px;
+  border-radius:10px;
+  color: #c8e690;
+  background: rgba( 0, 0, 0, 0.45 );
+  box-shadow: 0 8px 32px 0 rgba(0, 66, 8, 0.639);
+  backdrop-filter: blur( 4.5px );
+  -webkit-backdrop-filter: blur( 4.5px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+#to-do-form input::placeholder{
+  color:#c8e690;
+
+}
+#to-do-form input:focus, #to-do-form button:focus{
+  outline: none;
+}
+#to-do-form button{
+  height: 45px;
+  width: 70px;
+  border: 0;
+  cursor: pointer;
+  font-weight: bolder;
+}
+
+.btn {
+  background: none;
+  border: 2px solid #fff;
+  font-size: 15px;
+  color: #131313;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s;
+  border-radius: 25px;
+  background-color: #c8e690;
+  font-weight: bolder;
+  box-shadow: 0 2px 0 2px #000;
+ }
+ 
+ .btn:before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 120%;
+  background-color: #2D033B;
+  top: 50%;
+  transform: skewX(30deg) translate(-150%, -50%);
+  transition: all 0.5s;
+ }
+ 
+ .btn:hover {
+  background-color: #c8e690;
+  color: #0d0000;
+  box-shadow: 0 2px 0 2px #000000;
+ }
+ 
+ .btn:hover::before {
+  transform: skewX(30deg) translate(150%, -50%);
+  transition-delay: 0.1s;
+ }
+ 
+ .btn:active {
+  transform: scale(0.9);
+ }
